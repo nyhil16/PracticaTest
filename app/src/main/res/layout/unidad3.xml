@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3EFF5"
+    tools:context=".Unidad3">
+
+    <TextView
+        android:id="@+id/lblPuntos3"
+        android:layout_width="109dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/puntos"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtPuntosCantidad3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPuntosCantidad3"
+        android:layout_width="50dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSiguiente3_2"
+        android:layout_width="147dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#55DBCB"
+        android:onClick="calificar"
+        android:text="@string/calificar"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnIcon" />
+
+    <Button
+        android:id="@+id/btnSiguiente3_1"
+        android:layout_width="147dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#55DBCB"
+        android:onClick="siguiente3"
+        android:text="@string/siguiente"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnActivity" />
+
+    <TextView
+        android:id="@+id/lblRubrica3_2"
+        android:layout_width="134dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/rubrica3"
+        android:textColor="#646881"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnIcon" />
+
+    <TextView
+        android:id="@+id/lblRubrica3_1"
+        android:layout_width="134dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/rubrica3"
+        android:textColor="#646881"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnActivity" />
+
+    <TextView
+        android:id="@+id/lblPregunta3_1"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="27dp"
+        android:text="@string/UT3_1"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spnActivity"
+        android:layout_width="278dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="67dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPregunta3_1"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/lblPregunta3_2"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="27dp"
+        android:text="@string/UT3_2"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSiguiente3_1" />
+
+    <Spinner
+        android:id="@+id/spnIcon"
+        android:layout_width="278dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="67dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPregunta3_2"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

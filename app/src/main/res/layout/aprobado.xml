@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3EFF5"
+    tools:context=".Aprobado">
+
+    <TextView
+        android:id="@+id/txtPuntuacionAprob"
+        android:layout_width="278dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="67dp"
+        android:gravity="center_horizontal"
+        android:text="@string/puntuacion"
+        android:textColor="#0D0A0B"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAprobado" />
+
+    <Button
+        android:id="@+id/btnCerrarApr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="159dp"
+        android:backgroundTint="#55DBCB"
+        android:onClick="cerrar"
+        android:text="@string/cerrar"
+        android:textColor="#0D0A0B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBien" />
+
+    <ImageView
+        android:id="@+id/imgBien"
+        android:layout_width="match_parent"
+        android:layout_height="383dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPuntuacionAprob"
+        app:srcCompat="@drawable/greencheck" />
+
+    <TextView
+        android:id="@+id/txtAprobado"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/aprobado"
+        android:textColor="#0D0A0B"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

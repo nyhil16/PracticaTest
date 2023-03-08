@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">PracticaTest</string>
+    <string name="UT1">UT1:¿Qué elementos puedes encontrar en la carpeta de recursos(res) de una nueva actividad?</string>
+    <string name="ut1Opcion1">colores</string>
+    <string name="ut1Opcion2">MainActivity</string>
+    <string name="ut1Opcion3">local.properties</string>
+    <string name="ut1Opcion4">activity_Main</string>
+    <string name="ut1Opcion5">AndroidManifest</string>
+    <string name="ut1Opcion6">themes</string>
+    <string name="siguiente">SIGUIENTE</string>
+    <string name="intentos">Tienes 3 intentos</string>
+    <string name="gastado">Has gastado - intentos</string>
+    <string name="sinIntentos">Pulsa SIGUIENTE para continuar</string>
+    <string name="puntos">Puntos: </string>
+    <string name="rubrica1">1 pto correcta\n-1 pto incorrecta</string>
+    <string name="UT2">UT2:¿Qué tipo de variable recibe el método setVisibility()?</string>
+    <string name="tipoString">String</string>
+    <string name="tipoInt">int</string>
+    <string name="tipoBoolean">boolean</string>
+    <string name="tipoDouble">double</string>
+    <string name="tipoChar">char</string>
+    <string name="rubrica2">3 ptos correcta\n-2 pto incorrecta</string>
+    <string name="UT3_1">UT3:¿Para pasar un elemento desde un Activity al otro usas el metodo?</string>
+    <string name="UT3_2">UT3:¿Dónde puedes cambiar el icono de tu aplicación?</string>
+    <string name="rubrica3">2 ptos correcta\n-1 pto incorrecta</string>
+    <string name="calificar">CALIFICAR</string>
+    <string name="puntuacion">Puntuacion: </string>
+    <string name="suspendido">Lo siento has suspendido</string>
+    <string name="aprobado">Felicitaciones has aprobado</string>
+    <string name="cerrar">CERRAR</string>
+</resources>

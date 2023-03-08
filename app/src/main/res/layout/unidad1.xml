@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3EFF5"
+    tools:context=".Unidad1">
+
+    <TextView
+        android:id="@+id/lblPuntos1"
+        android:layout_width="109dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/puntos"
+        android:textColor="#0D0A0B"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtPuntosCantidad1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPuntosCantidad1"
+        android:layout_width="50dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblPregunta1"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="27dp"
+        android:text="@string/UT1"
+        android:textColor="#0D0A0B"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linlayout1"
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="39dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPregunta1">
+
+        <CheckBox
+            android:id="@+id/cbColores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#000000"
+            android:text="@string/ut1Opcion1"
+            android:textColor="#0D0A0B"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cbMainAct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#000000"
+            android:text="@string/ut1Opcion2"
+            android:textColor="#0D0A0B"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cbLocalProp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#000000"
+            android:text="@string/ut1Opcion3"
+            android:textColor="#0D0A0B"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cbActivityMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#000000"
+            android:text="@string/ut1Opcion4"
+            android:textColor="#0D0A0B"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cbManifest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#000000"
+            android:text="@string/ut1Opcion5"
+            android:textColor="#0D0A0B"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cbThemes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#000000"
+            android:text="@string/ut1Opcion6"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="147dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#55DBCB"
+        android:onClick="siguiente1"
+        android:text="@string/siguiente"
+        android:textColor="#0D0A0B"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linlayout1" />
+
+    <TextView
+        android:id="@+id/txtIntentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/intentos"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSiguiente" />
+
+    <TextView
+        android:id="@+id/txtGastado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/gastado"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIntentos" />
+
+    <TextView
+        android:id="@+id/lblRubrica1"
+        android:layout_width="159dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="39dp"
+        android:gravity="center_horizontal"
+        android:text="@string/rubrica1"
+        android:textColor="#646881"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSinIntentos" />
+
+    <TextView
+        android:id="@+id/lblSinIntentos"
+        android:layout_width="163dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="39dp"
+        android:gravity="center|center_vertical"
+        android:text="@string/sinIntentos"
+        android:textColor="#BD2929"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linlayout1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
